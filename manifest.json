@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "简书插件",
+    "version": "1.0",
+    "description": "我的第二个Chrome扩展",
+    "content_scripts":[
+        {
+            "matches": ["http://www.jianshu.com/p/840798ba19b7"],
+            "js": ["js/main.js"],
+            "css":["css/auxiliary.css"],
+            "run_at":"document_end"
+        }
+    ]
+
+}
